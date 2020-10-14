@@ -1,6 +1,7 @@
 package ru.noties.scrollable.sample;
 
-import android.support.v4.app.FragmentActivity;
+
+import androidx.fragment.app.FragmentActivity;
 
 public class BaseActivity extends FragmentActivity {
 

@@ -4,8 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.Window;
 
 import java.util.ArrayList;
@@ -18,7 +18,6 @@ import ru.noties.scrollable.sample.colorful.ColorfulActivity;
 import ru.noties.scrollable.sample.dialog.ScrollableDialog;
 import ru.noties.scrollable.sample.manual.ManualControlActivity;
 import ru.noties.scrollable.sample.overscroll.custompullrefresh.CustomOverScrollActivity;
-import ru.noties.scrollable.sample.pager.fragment.FragmentPagerActivity;
 import ru.noties.scrollable.sample.scrollheader.ScrollHeaderActivity;
 import ru.noties.scrollable.sample.swiperefresh.SwipeRefreshActivity;
 import ru.noties.vt.Holder;
@@ -85,11 +84,11 @@ public class SampleListActivity extends BaseActivity {
         final Resources r = context.getResources();
         final List<SampleListItem> items = new ArrayList<>();
 
-        items.add(new SampleListItem(
+        /*items.add(new SampleListItem(
                 FragmentPagerActivity.class,
                 r.getString(R.string.sample_title_fragment_pager),
                 r.getString(R.string.sample_description_fragment_pager))
-        );
+        );*/
 
         items.add(new SampleListItem(
                 CustomOverScrollActivity.class,

@@ -3,8 +3,6 @@ package ru.noties.scrollable.sample;
 import android.animation.LayoutTransition;
 import android.content.Context;
 import android.graphics.Rect;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,7 +11,8 @@ import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import ru.noties.scrollable.sample.R;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 public class TabsLayout extends HorizontalScrollView {
 

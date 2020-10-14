@@ -2,9 +2,10 @@ package ru.noties.scrollable.sample;
 
 import android.app.Activity;
 import android.os.Build;
-import android.support.annotation.IdRes;
 import android.view.View;
 import android.view.ViewTreeObserver;
+
+import androidx.annotation.IdRes;
 
 /**
  * Created by Dimitry Ivanov on 25.12.2015.

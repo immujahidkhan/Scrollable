@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "ru.noties.scrollable.sample"
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion TARGET_SDK
         versionCode VERSION_CODE as int
         versionName VERSION_NAME
@@ -23,15 +23,16 @@ android {
 
 dependencies {
 
-    final def supportVersion = '25.2.0'
-
-    compile "com.android.support:recyclerview-v7:${supportVersion}"
-    compile "com.android.support:support-fragment:${supportVersion}"
-    compile "com.android.support:cardview-v7:${supportVersion}"
-
-    compile 'ru.noties:debug:3.0.0@jar'
-    compile 'ru.noties:ccf:1.0.0'
-    compile 'ru.noties:vt:1.0.0'
-
-    compile project(':library')
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'ru.noties:debug:3.0.0@jar'
+    implementation 'ru.noties:ccf:1.0.0'
+    implementation 'ru.noties:vt:1.0.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation project(':library')
 }
